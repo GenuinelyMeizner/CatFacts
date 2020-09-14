@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.Date;
 
-public class CatFact {
+public class CatFact implements Comparable<CatFact> {
     private String text;
     private Date createdAt;
     private Date updatedAt;
@@ -40,6 +40,12 @@ public class CatFact {
     }
 
     @Override
+    public int compareTo(CatFact otherCatFact) {
+
+        return getCreatedAt().compareTo(otherCatFact.getCreatedAt());
+    }
+
+    @Override
     public String toString() {
         return "CatJoke{" +
                 "text='" + text + '\'' +
@@ -59,4 +65,6 @@ public class CatFact {
 
         return data;
     }
+
+
 }
