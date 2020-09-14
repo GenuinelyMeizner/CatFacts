@@ -41,7 +41,7 @@ public class MyController {
         ArrayList<CatFact> ten = new ArrayList<CatFact>();
 
         for (int i = 0; i <= 10; i++) {
-            ten.add(tenFacts);
+            ten.add(tenFacts.getCatData());
         }
 
         return ten;
@@ -56,7 +56,7 @@ public class MyController {
         ArrayList<CatFact> ten = new ArrayList<CatFact>();
 
         for (int j = 0; j <= 10; j++) {
-            ten.add(tenFacts);
+            ten.add(tenFacts.getCatData());
         }
 
         Collections.sort(ten);
@@ -85,5 +85,4 @@ public class MyController {
 
             return "Sorry no luck";
     }
-
 }
