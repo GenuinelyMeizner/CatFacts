@@ -36,9 +36,9 @@ public class MyController {
     @ResponseBody
     public ArrayList<CatFact> getTenFacts() throws IOException {
 
-        CatFact tenFacts = new CatFact();
-
         ArrayList<CatFact> ten = new ArrayList<CatFact>();
+
+        CatFact tenFacts = new CatFact();
 
         for (int i = 0; i <= 10; i++) {
             ten.add(tenFacts.getCatData());
@@ -51,10 +51,10 @@ public class MyController {
     @ResponseBody
     public ArrayList<CatFact> getTenFactsSortByDate() throws IOException {
 
-        CatFact tenFacts = new CatFact();
-
         ArrayList<CatFact> ten = new ArrayList<CatFact>();
 
+        CatFact tenFacts = new CatFact();
+        
         for (int j = 0; j <= 10; j++) {
             ten.add(tenFacts.getCatData());
         }
